@@ -1,4 +1,7 @@
-﻿int[] notas; 
+﻿using System.Collections;
+
+int[] notas;
+
 double CalcularPromedioForEach(int[] notas)
 {
     int sumaNotas = 0;
@@ -9,7 +12,7 @@ double CalcularPromedioForEach(int[] notas)
 
     menor = notas[0];
     mayor = notas[0];
-
+   
     foreach (var item in notas)
     {
         //Calculando la nota menor
@@ -73,7 +76,6 @@ void IngresarNotas()
         notas[i] = Convert.ToInt32(Console.ReadLine());
     }
 }
-
 
 //Encapsular(agrupar)
 double promedio = 0;
